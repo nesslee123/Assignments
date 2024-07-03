@@ -1,14 +1,24 @@
-// Initialize the map
 const map = new maplibregl.Map({
-    container: 'map', // container ID
-    style: 'https://api.maptiler.com/maps/streets/style.json?key=wsyYBQjqRwKnNsZrtci1', // Your style URL
-    center: [ -118.444, 34.0709], // Starting position [lng, lat]
-    zoom: 15 // Starting zoom level
+    container: 'map', 
+    style: 'https://api.maptiler.com/maps/d1f6ba12-c4ca-499f-87bb-f45230f2601d/style.json?key=DgAnlcsmXGhaJHJVy0LQ', // Your style URL
+    center: [11.255814, 43.769562], 
+    zoom: 15 
 });
 
-// Add a marker to the map
 new maplibregl.Marker()
-    .setLngLat([ -118.444, 34.0709])
-    .setPopup(new maplibregl.Popup({ offset: 25 }) // Add popups
-        .setHTML('Math Sciences 4328 aka the Technology Sandbox<br> is the lab where I used to work in '))
+    .setLngLat([2.352222, 48.856613])
+    .setPopup(new maplibregl.Popup({ offset: 25 }) 
+        .setHTML('Paris, France which is where I traveled with my mom and had a mother/daughter trip'))
+    .addTo(map);
+
+new maplibregl.Marker()
+    .setLngLat([32.861969, 39.896519])
+    .setPopup(new maplibregl.Popup({ offset: 25 }) 
+        .setHTML('Cappadocia, Turkiye which is where I first went on an air baloon'))
+    .addTo(map);
+
+new maplibregl.Marker()
+    .setLngLat([11.255814, 43.769562])
+    .setPopup(new maplibregl.Popup({ offset: 25 }) 
+        .setHTML('Florence, Italy which is where I ate the best pizza'))
     .addTo(map);
