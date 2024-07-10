@@ -1,0 +1,121 @@
+* {
+    font-family: Cooper;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+html{
+    background-color: rgba(86, 104, 167, 0.916); 
+}
+
+html, body {
+    height: 80vh; 
+    padding: 1rem; 
+    box-sizing: border-box;
+}
+
+body {
+    display: grid; 
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer"; 
+    grid-template-rows: auto 1fr auto; 
+    color: rgb(26, 33, 75);
+}
+
+main {
+    display: grid; 
+    grid-template-areas:
+        "portfolio map"; 
+    grid-template-columns: 1fr 1fr; 
+   
+}
+
+header { 
+    grid-area: header; 
+}
+
+main { 
+    grid-area: main; 
+    
+}
+
+h1,
+h2,
+h3
+ {
+  margin: 0.1rem 0;
+}
+
+h1 {
+  font-size: 2rem;
+  color: rgb(26, 33, 75);
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding-left: 20px;
+  color: rgb(26, 33, 75);
+}
+
+h3 {
+    font-size: 1.2rem;
+    padding-left: 680px;
+    color: rgb(26, 33, 75);
+     
+  }
+
+
+ul {
+    color: rgb(26, 33, 75);
+}
+
+.portfolio {
+    grid-area: portfolio; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    color: rgb(26, 33, 75);
+    margin-right: 1rem;
+}
+
+.popupTitle {
+    font-size: large;
+}
+
+#list {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#map { 
+    grid-area: map; 
+    height: 80vh; 
+    color:rgb(26, 33, 75);
+    margin-bottom: 0.5rem;
+}
+
+
+  
+#footer { 
+    grid-area: footer; 
+    padding: 5px;
+    background-color: rgb(26, 33, 75); 
+    color: #fff; 
+    color: rgba(86, 104, 167, 0.916);
+    text-align: center;
+}
+
+#contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color:rgb(26, 33, 75);
+    margin-bottom: 0.5rem;
+}
